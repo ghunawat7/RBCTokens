@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; 
+    
+}
+
+
+.box{
+    width: 80%;
+    height: auto;
+    background: white;
+    border: 1px solid rgb(255 255 255 / 7%);
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    margin: auto;
+    color: black;
+    box-shadow: 2px 2px 1px 2px rgb(235, 226, 210);
+  }
+  
+  .time{
+    height: 90px;
+    width: 90%;
+    background: rgba(15, 170, 194, 0.874);
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  
+@media only screen and (max-width: 500px) {
+    .box {
+      width: 100%;
+    }
+    .converter{
+      width: 100%;
+    }
+
+    #converterone{
+      width: 100%;
+    }
+}
+
+.loader{
+    animation: load 2s linear infinite;
+  }
+  
+  @keyframes load {
+    100% {transform: rotate(360deg);}
+  }
+  
+
+  .roadmapbox{
+    background: rgba(0, 0, 0, 0.555);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgb(255 255 255 / 7%);
+    border-radius: 15px;
+    padding: 25px;
+    transition: .3s ease-in-out;
+    height: 100%;
+  
+  }
+
+  ul{
+    list-style: none;
+  }
+  
+  ul>li>a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  .choose-item{
+    background: rgb(3, 2, 81);
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    width: 24%;
+  }
+
+
+
+  .harambe{
+    border-radius: 20px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.555);
+    
+  }
+
+  .harambe2{
+    border-radius: 20px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.555);
+    background-image: url(../images/rbc5.png);
+    background-repeat: no-repeat;
+    background-position:bottom right;
+    background-size: contain;
+    opacity: 0.8;
+    
+  }
+
+  .harambe:hover{
+
+    border: 1px solid white;
+
+  }
+
+
+  .RbcLogo{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+
+  
+
+  
+
+  @media only screen and (max-width: 500px) {
+  
+    .mynavbar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border: 0;
+      z-index: 99;
+      height: auto;
+      -webkit-transition: .5s ease;
+      transition: .5s ease;
+      margin: 0px;
+    }
+    .choose-item{
+      width: 98% !important;
+    }
+    .mynavbar {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .social{
+      visibility: hidden;
+      background-color: rgb(3, 2, 81)
+    }
+
+    .choose-item{
+      border-radius: 0px;
+    }
+    .box2{
+      width: 50% !important;
+    }
+ 
+  
+  }
+
+  .btn-action {
+    padding: 12px 25px;
+    border: 2px solid #00d7eb;
+    border-radius: 27px;
+    transition: color 0.4s linear;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    background: rgb(255 255 255 / 8%);
+    background-color:#3f0656;
+    color: white;
+    z-index: 1;
+}
+
+.input_banner {
+  padding: 12px 10px;
+  border: 2px solid #00d7eb;
+  background: rgb(255 255 255 / 8%);
+  width: 60%;
+}
+
+.btn-action::before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-action::after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+
+
+/* blink date */
+
+.blinkdate {
+  color: white;
+  animation: blink-animation 2s infinite;
+}
+
+@keyframes blink-animation {
+  0% {
+      color: rgb(0, 200, 255);
+  }
+
+  50% {
+      color: rgb(34, 83, 3);
+  }
+  75% {
+      color: rgb(0, 17, 255);
+  }
+
+  100% {
+      color: white;
+  }
+}
+
+
+
+/* // When resolution <= 1200px, hide full text and show short text */
+@media (max-width: 1000px) {
+  
+    .full-text { font-size: 14px; }
+}
+
+.box2 {
+  background: #00C7EF;
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 15px;
+  width: 40%;
+  color: white;
+  backdrop-filter: blur(15px);
+  height: 50px;
+}
