@@ -94,8 +94,8 @@
     background: rgba(0, 0, 0, 0.555);
     background-image: url(../images/rbc5.png);
     background-repeat: no-repeat;
-    background-position:bottom right;
-    background-size: contain;
+    background-position:bottom right ;
+    background-size:  contain;
     opacity: 0.8;
     
   }
@@ -237,4 +237,24 @@
   color: white;
   backdrop-filter: blur(15px);
   height: 50px;
+}
+
+.Activitybox {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  color: white;
+}
+
+.scroll-container{
+  height: 300px;
+  overflow: auto;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
