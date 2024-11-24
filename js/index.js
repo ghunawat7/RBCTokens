@@ -64,3 +64,47 @@ function OpenFacebookApp(){
     window.location.href = "https://www.facebook.com/sharer/sharer.php?u="+ url[randomIndex] +"&quote=Check out this amazing post!";
     console.log(url[randomIndex])
 }
+
+
+// open whatsapp
+
+function OpenWhatsApp(){
+   
+        const message = "Hello! Check out this amazing website: ";
+        var url=["https://www.facebook.com/share/v/1GfNyCXyxz/","https://www.rabito.io/","https://www.facebook.com/share/17nAZxu7bb/","https://www.facebook.com/share/p/1PuMkz1a95/"];
+        const randomIndex = Math.floor(Math.random() * url.length);
+        const whatsappURL = `https://wa.me/?text=${encodeURIComponent(message + url[randomIndex])}`;
+        
+        if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+            window.location.href = whatsappURL;
+        } else {
+            alert("WhatsApp sharing is available only on mobile devices.");
+        }
+    }
+    
+
+
+function OpenInstagram(){
+    var url = ["https://www.instagram.com/reel/DCuACktTMnb/?igsh=dHZvb2tmOW90NHRk","https://www.instagram.com/p/DCriejWz6FS/?igsh=MWwxY2lvYWw0a2VkZw==/","https://www.instagram.com/reel/DBv8_k9Iohm/?igsh=MTJxYzJ4aTMzdzBkMQ=="]
+    const randomIndex = Math.floor(Math.random() * url.length);
+    window.location.href=url[randomIndex];
+    // window.location.href = "https://www.facebook.com/sharer/sharer.php?u="+ url[randomIndex] +"&quote=Check out this amazing post!";
+    console.log(url[randomIndex])
+
+
+}
+
+// share telegram
+
+function shareOnTelegram() {
+    const message = "Hello! Check out this amazing website: ";
+    var url = ["https://www.instagram.com/reel/DCuACktTMnb/?igsh=dHZvb2tmOW90NHRk","https://www.instagram.com/p/DCriejWz6FS/?igsh=MWwxY2lvYWw0a2VkZw==/","https://www.instagram.com/reel/DBv8_k9Iohm/?igsh=MTJxYzJ4aTMzdzBkMQ=="]
+    const randomIndex = Math.floor(Math.random() * url.length);
+    const telegramURL = `https://t.me/share/url?url=${encodeURIComponent(url[randomIndex])}&text=${encodeURIComponent(message)}`;
+    
+    if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+        window.location.href = telegramURL;
+    } else {
+        alert("Telegram sharing is available only on mobile devices.");
+    }
+}
