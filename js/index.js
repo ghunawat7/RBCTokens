@@ -58,6 +58,8 @@ function Mycopy() {
 
 //   open facebook
 
-function OpenFacebook(){
-    window.location.href = "fb://profile";
+function OpenFacebookApp(){
+    var url=["https://www.facebook.com/share/v/1GfNyCXyxz/","https://www.facebook.com/share/p/1LEtxoJr8b/","https://www.facebook.com/share/17nAZxu7bb/","https://www.facebook.com/share/p/1PuMkz1a95/"];
+    const randomIndex = Math.floor(Math.random() * url.length);
+    window.location.href = "https://www.facebook.com/sharer/sharer.php?u='"+url[randomIndex]+"'&quote=Check out this amazing post!";
 }
