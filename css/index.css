@@ -150,6 +150,10 @@
     .box2{
       width: 50% !important;
     }
+
+    table{
+      font-size: 11px;
+    }
  
   
   }
@@ -242,11 +246,10 @@
 .Activitybox {
   width: 100%;
   height: auto;
-  margin: auto;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgb(255 255 255 / 7%);
-  border-radius: 15px;
-  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
   color: white;
 }
 
