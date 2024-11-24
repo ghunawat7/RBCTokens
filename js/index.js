@@ -55,3 +55,9 @@ function Mycopy() {
   }
 
 
+
+//   open facebook
+
+function OpenFacebook(){
+    window.location.href = "fb://profile";
+}
