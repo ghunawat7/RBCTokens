@@ -108,3 +108,26 @@ function shareOnTelegram() {
         alert("Telegram sharing is available only on mobile devices.");
     }
 }
+
+// table auto scrolling
+
+const container = document.getElementById('table-container');
+const table = document.getElementById('scrolling-table');
+const tbody = table.querySelector('tbody');
+
+// Duplicate table rows for seamless scrolling
+tbody.innerHTML += tbody.innerHTML;
+
+let scrollAmount = 0;
+    const scrollSpeed = 0.3; // Adjust speed (lower value = slower scroll)
+
+    function scrollTable() {
+      scrollAmount += scrollSpeed; // Increment scroll amount
+      if (scrollAmount >= tbody.scrollHeight / 2) {
+        scrollAmount = 0; // Reset scroll when halfway through
+      }
+      container.scrollTop = scrollAmount;
+      requestAnimationFrame(scrollTable); // Repeat scrolling
+    }
+
+scrollTable();
