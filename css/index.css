@@ -8,7 +8,7 @@
 
 
 .box{
-    width: 80%;
+    width: 90%;
     height: auto;
     background: white;
     border: 1px solid rgb(255 255 255 / 7%);
@@ -91,7 +91,6 @@
   .harambe2{
     border-radius: 20px;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.555);
     background-image: url(../images/rbc5.png);
     background-repeat: no-repeat;
     background-position:bottom right ;
@@ -260,4 +259,18 @@
 
 .scroll-container::-webkit-scrollbar {
   display: none;
+}
+
+#banner_canvas {
+  height: 340px;
+  opacity: 0.2;
+  z-index:1 ;
+}
+
+@media only screen and (max-width: 600px) {
+  #banner_canvas {
+   
+    margin-top: 80px;
+
+  }
 }
